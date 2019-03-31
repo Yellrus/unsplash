@@ -1,9 +1,0 @@
-//============================================
-// Center Transform
-//============================================
-
-@mixin center-transform($position: absolute, $transform: null) {
-    @include pos(50%, top left, $position);
-
-    transform: if($transform, $transform, unquote('translate(-50%, -50%)'));
-}

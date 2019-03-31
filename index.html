@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="utf-8">
+    <title>New Project</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000" />
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Generate using http://realfavicongenerator.net/ -->
+
+
+
+</head>
+
+<body>
+
+    <div class="page__inner">
+        <header class="page-header">
+            <div class="page-header__wrap">
+                <form id="formPhotoSearch" class="search">
+                    <div class="search__wrap">
+                        <label class="search__input-wrap">
+                            <input type="search" id="queryInput" class="search__input" name="query" autocomplete="off" required />
+                        </label>
+
+                        <button type="submit" class="search__btn">
+                            <span class="sr-only">Найти</span>
+
+                            <svg class="i i-search search__icon">
+                                <use xlink:href="images/sprite.svg#search"></use>
+                            </svg>
+
+                        </button>
+                    </div>
+                </form>
+
+                <nav class="nav">
+                    <!-- тут должен быть роутинг -->
+                    <ul class="nav__items">
+                        <li class="nav__item">
+                            <span class="nav__link">Work</span>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link">Nature</span>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link">Architecture</span>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link">Animals</span>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link">Wallpapers</span>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link">Textures & Patterns</span>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link">Current Events</span>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link">Business & Work</span>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link">Travel</span>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link">Food & Drink</span>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link">People</span>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link">Health</span>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link">Love</span>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link">Spirituality</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <main class="page__content">
+
+
+            <div class="container">
+                <div class="panel-head">
+                    <h1 class="panel-head__title js-category-title"></h1>
+                </div>
+                <div class="image-grid js-images"></div>
+                <div class="page-load-status">
+                    <div class="lds-ellipsis infinite-scroll-request">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <p class="infinite-scroll-last">Ты дошел до конца</p>
+                    <p class="infinite-scroll-error">Нет больше страниц для загрузки</p>
+                </div>
+            </div>
+
+            <div id="mediaInfo" class="modal">
+                <span class="close">&times;</span>
+                <div class="modal__content">
+                    <div class="modal__panel"></div>
+                    <div class="modal__body"></div>
+                </div>
+            </div>
+
+            <a href="#0" class="cd-top js-cd-top">Top
+
+                <svg class="i i-up-arrow cd-top__icon">
+                    <use xlink:href="images/sprite.svg#up-arrow"></use>
+                </svg>
+
+            </a>
+
+
+        </main>
+
+        <div class="page__footer-wrapper">
+            <footer class="page-footer">
+                <p>Подвал 1</p>
+            </footer>
+        </div>
+
+
+        <script src="js/main.js"></script>
+
+    </div>
+</body>
+
+</html>

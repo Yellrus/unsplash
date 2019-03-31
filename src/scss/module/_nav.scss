@@ -1,0 +1,42 @@
+.nav {
+    &__items {
+        display: flex;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        // a {
+        //     display: block;
+        //     padding-bottom: 17px;
+        //     padding-top: 21px;
+        //     line-height: 1;
+        //     font-size: 14px;
+        //     white-space: nowrap;
+        //     color: #999;
+        // }
+    }
+
+    &__link {
+        display: block;
+        padding-bottom: 17px;
+        padding-top: 21px;
+        line-height: 1;
+        font-size: 14px;
+        white-space: nowrap;
+        color: #999;
+        cursor: pointer;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+            color: #f2f2f2;
+        }
+    }
+}

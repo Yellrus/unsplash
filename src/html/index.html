@@ -1,0 +1,35 @@
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs:
+https://mozilla.github.io/nunjucks/api.html #} {% extends
+'layouts/application.html' %} {% block content %}
+
+<div class="container">
+    <div class="panel-head">
+        <h1 class="panel-head__title js-category-title"></h1>
+    </div>
+    <div class="image-grid js-images"></div>
+    <div class="page-load-status">
+        <div class="lds-ellipsis infinite-scroll-request">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p class="infinite-scroll-last">Ты дошел до конца</p>
+        <p class="infinite-scroll-error">Нет больше страниц для загрузки</p>
+    </div>
+</div>
+
+<div id="mediaInfo" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal__content">
+        <div class="modal__panel"></div>
+        <div class="modal__body"></div>
+    </div>
+</div>
+
+<a href="#0" class="cd-top js-cd-top"
+    >Top
+    {{ icon('up-arrow', 'cd-top__icon') }}
+</a>
+
+{% endblock %}

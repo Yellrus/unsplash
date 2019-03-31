@@ -1,0 +1,28 @@
+.download {
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 40px;
+        color: #777;
+        fill: currentColor;
+        background-color: hsla(0, 0%, 100%, 0.85);
+        border: 1px solid transparent;
+        height: 32px;
+        padding: 0 11px;
+        font-size: 14px;
+        line-height: 30px;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            background-color: hsla(0, 0%, 100%, 1);
+            color: rgb(32, 32, 32);
+        }
+    }
+
+    &__icon {
+        width: 16px;
+    }
+}

@@ -1,0 +1,15 @@
+.panel-head {
+    margin: 20px 0;
+
+    &__title {
+        font-size: 40px;
+        font-weight: 600;
+        text-transform: capitalize;
+        text-align: left;
+    }
+
+    &__text {
+        display: none;
+        text-align: left;
+    }
+}
